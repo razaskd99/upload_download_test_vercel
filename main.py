@@ -65,7 +65,7 @@ def download_file(filename: str):
     file_path = os.path.join(folder, filename)
     
     # Check if the file exists
-    if not os.path.exists(file_path):
+    if not os.path.exists(folder):
         raise FileNotFoundError("File not found")
 
     return FileResponse(file_path)
