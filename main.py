@@ -27,6 +27,7 @@ async def check_server():
 
 
 
+
 @app.post("/upload/")
 async def upload_file(file: UploadFile = File(...)):
     try:
