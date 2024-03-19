@@ -61,7 +61,7 @@ async def download(filename: str):
         raise HTTPException(status_code=500, detail=str(e))
 
 def download_file(filename: str):
-    folder = os.path.join("uploads", "documents")
+    folder = os.path.join("/tmp", "documents")
     file_path = os.path.join(folder, filename)
     
     # Check if the file exists
