@@ -2,7 +2,16 @@ import os
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.responses import FileResponse
 
-app = FastAPI()
+app = FastAPI(
+    debug=True,
+    title="test upload", 
+    version="1.0.0",
+    summary="",
+    description="",
+    root_path_in_servers=True,
+    include_in_schema=True,
+    separate_input_output_schemas=True,
+    )
 
 
 def save_file(file: UploadFile):
