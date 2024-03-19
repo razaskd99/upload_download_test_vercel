@@ -23,7 +23,6 @@ def save_file(file: UploadFile):
             
 @app.get("/")
 async def check_server():
-    print(os.environ)
     return {"message": "welcome to test server"}
 
 
