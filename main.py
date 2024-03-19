@@ -16,7 +16,7 @@ app = FastAPI(
 
 def save_file(file: UploadFile):
     
-        folder = os.path.join("uploads", "documents")
+        folder = os.path.join("tmp", "documents")
         # Create the directory if it doesn't exist
         if not os.path.exists(folder):
             os.makedirs(folder)  # Create the folder if it doesn't exist
